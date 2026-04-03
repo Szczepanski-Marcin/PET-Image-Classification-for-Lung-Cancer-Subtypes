@@ -2,8 +2,6 @@ PET Image Analysis Pipeline (Lung Cancer Dataset)
 
 📌 Overview
 
-Medical imaging plays a critical role in modern oncology, particularly in assessing tumor metabolism and treatment response. Positron Emission Tomography (PET) scans provide rich functional information, but transforming raw imaging data into actionable insights requires a structured and reproducible workflow.
-
 In this project, I developed an end-to-end PET image analysis pipeline using a public lung cancer dataset. The goal was to simulate a realistic clinical and research environment, where imaging data is processed, validated, and analyzed to extract meaningful quantitative biomarkers.
 
 Starting from raw DICOM images, the pipeline performs preprocessing, quality control, segmentation of high-uptake regions, and quantitative analysis of tumor characteristics. The final outputs include both visualizations and structured data that could support downstream tasks such as statistical analysis or machine learning.
@@ -13,14 +11,24 @@ This project is designed to reflect workflows commonly used in oncology research
 
 
 🗂️ Dataset
-Source: Public dataset from The Cancer Imaging Archive (TCIA)
-Modality: PET/CT (image-only subset used in this project)
-Domain: Lung cancer imaging
-Included Cancer Types:
-Adenocarcinoma
-Small Cell Carcinoma
-Large Cell Carcinoma
-Squamous Cell Carcinoma
+This project uses a subset of the Lung PET-CT dataset available on Kaggle.
+https://www.kaggle.com/datasets/sshhwweettaa/lung-cancer-ct-pet-subset-dicom-format/data
+
+Image-only dataset (no annotations or clinical metadata) of DICOM images from patients diagnosed with lung cancer and includes both PET and CT modalities.
+
+Key characteristics:
+~18,500 DICOM images
+Four lung cancer types:
+Adenocarcinoma (~10,000 images)
+Small Cell Carcinoma (~3,000 images)
+Squamous Cell Carcinoma (~5,000 images)
+Large Cell Carcinoma (~500 images)
+
+Notes:
+The dataset is highly imbalanced, which affects model performance.
+Images are stored in DICOM format, commonly used in clinical workflows.
+No segmentation masks or labels at pixel level are provided.
+
 
 ⚙️ Pipeline Overview
 1. Data Ingestion & Handling
