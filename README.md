@@ -100,7 +100,7 @@ Squamous Cell Carcinoma       0.81      0.70      0.75      1000
 
 ### Confusion Matrix
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](images/Confusion_matrix.png)
 
 *Figure: Model performance across cancer subtypes.*
 
