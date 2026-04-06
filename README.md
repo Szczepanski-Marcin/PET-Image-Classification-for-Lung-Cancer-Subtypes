@@ -122,9 +122,9 @@ Squamous Cell Carcinoma       0.81      0.70      0.75      1000
 ### Sample PET Slices
 
 <p align="center">
-  <img src="images/sample_0.png" width="30%">
   <img src="images/sample_1.png" width="30%">
   <img src="images/sample_2.png" width="30%">
+  <img src="images/sample_3.png" width="30%">
 </p>
 
 *Figure: Example PET slices from the dataset.*
