@@ -35,7 +35,6 @@ The pipeline demonstrates:
 - Pixel intensities normalized to [0, 1]  
 - Empty or invalid images removed  
 
----
 
 ### 2. Feature Extraction
 
@@ -59,7 +58,6 @@ These features capture spatial intensity patterns in the image.
 
 > This is a **proxy feature**, not true tumor segmentation.
 
----
 
 ### 3. Model Training
 
@@ -72,21 +70,23 @@ These features capture spatial intensity patterns in the image.
   - Train/test split (80/20)
   - 5-fold stratified cross-validation  
 
----
+
 
 ## Results
 
 ### Cross-Validation Performance
 
 CV Scores: [0.794, 0.788, 0.789, 0.801, 0.799]
+
 Mean CV: 0.794
 
----
+
+
 
 ### Classification Report
-                      precision    recall   f1-score   support
+----------------------precision ---recall --f1-score --support
 
-Adenocarcinoma             0.81      0.95       0.87      2000
+Adenocarcinoma-------------0.81      0.95       0.87      2000
 Large Cell Carcinoma       0.73      0.33       0.46       100
 Small Cell Carcinoma       0.82      0.59       0.69       600
 Squamous Cell Carcinoma    0.80      0.69       0.74      1000
@@ -96,7 +96,7 @@ macro avg                  0.79       0.64      0.69      3700
 weighted avg               0.81       0.81      0.80      3700
 
 
----
+
 
 ## 📊 Visualizations
 
