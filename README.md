@@ -6,9 +6,13 @@
 This project explores lung cancer subtype classification using PET scan data. The goal is to extract meaningful radiomics-inspired features from medical images and train a machine learning model to distinguish between cancer types.
 
 The pipeline demonstrates:
+
 Medical image preprocessing (DICOM handling)
+
 Feature extraction (intensity, texture, shape proxies)
+
 Machine learning classification
+
 Model evaluation using clinically relevant metrics
 
 Dataset
