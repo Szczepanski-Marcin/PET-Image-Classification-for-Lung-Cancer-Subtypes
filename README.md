@@ -7,13 +7,7 @@ This project explores lung cancer subtype classification using PET scan data. Th
 
 The pipeline demonstrates:
 
-Medical image preprocessing (DICOM handling)
-
-Feature extraction (intensity, texture, shape proxies)
-
-Machine learning classification
-
-Model evaluation using clinically relevant metrics
+Medical image preprocessing (DICOM handling), Feature extraction (intensity, texture, shape proxies), Machine learning classification, Model evaluation using clinically relevant metrics
 
 Dataset
 
