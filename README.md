@@ -81,3 +81,107 @@ These features capture spatial intensity patterns in the image.
 ## 📈 Results
 
 ### 🔹 Cross-Validation Performance
+
+CV Scores: [0.794, 0.788, 0.789, 0.801, 0.799]
+Mean CV: 0.794
+
+---
+
+### 🔹 Classification Report
+                     precision    recall  f1-score   support
+
+Adenocarcinoma 0.81 0.95 0.87 2000
+Large Cell Carcinoma 0.73 0.33 0.46 100
+Small Cell Carcinoma 0.82 0.59 0.69 600
+Squamous Cell Carcinoma 0.80 0.69 0.74 1000
+
+accuracy 0.81 3700
+macro avg 0.79 0.64 0.69
+weighted avg 0.81 0.81 0.80
+
+
+---
+
+## 📊 Visualizations
+
+### 🔹 Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+*Figure: Model performance across cancer subtypes.*
+
+---
+
+### 🔹 ROC Curves
+
+![ROC Curve](images/roc_curve.png)
+
+*Figure: ROC curves showing class-wise separability.*
+
+---
+
+### 🔹 Feature Importance
+
+![Feature Importance](images/feature_importance.png)
+
+*Figure: Most influential features used by the model.*
+
+---
+
+### 🔹 Sample PET Slices
+
+<p align="center">
+  <img src="images/sample_0.png" width="30%">
+  <img src="images/sample_1.png" width="30%">
+  <img src="images/sample_2.png" width="30%">
+</p>
+
+*Figure: Example PET slices from the dataset.*
+
+> Note: No ROI overlays are shown to avoid misleading interpretation.
+
+---
+
+## 🧠 Key Insights
+
+- The model achieves **~81% accuracy**, indicating that radiomics-style features contain predictive signal  
+- Strong performance for **Adenocarcinoma**, weaker for **Large Cell Carcinoma** due to class imbalance  
+- Texture and intensity features are the most informative  
+
+---
+
+## ⚠️ Limitations
+
+This project highlights real-world challenges in medical imaging:
+
+- ❌ No tumor segmentation masks → no true ROI-based features  
+- ❌ Slice-level splitting → potential data leakage  
+- ❌ Class imbalance impacts minority classes  
+- ❌ PET intensities not standardized (no SUV normalization)  
+
+---
+
+## 🚀 Future Improvements
+
+- Patient-level splitting to avoid leakage  
+- Integration of tumor segmentation masks  
+- Deep learning models (CNNs, 3D architectures)  
+- Standardized radiomics (e.g., PyRadiomics)  
+- Multimodal learning (PET + CT)  
+
+---
+
+## 💼 Relevance for Medical Imaging Roles
+
+This project demonstrates:
+
+- Experience with **DICOM medical imaging workflows**  
+- Understanding of **radiomics feature extraction**  
+- Ability to build and evaluate **machine learning models**  
+- Awareness of **clinical and methodological limitations**  
+
+---
+
+## ✅ Final Note
+
+This project focuses on building a **transparent, reproducible ML pipeline** rather than presenting misleading visual results. All limitations are explicitly acknowledged to reflect real-world medical imaging challenges.
