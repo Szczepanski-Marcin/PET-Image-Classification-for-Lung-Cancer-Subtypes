@@ -1,4 +1,5 @@
 🧠 PET Image Classification for Lung Cancer Subtypes
+
 📌 Project Overview
 
 This project explores lung cancer subtype classification using PET scan data. The goal is to extract meaningful radiomics-inspired features from medical images and train a machine learning model to distinguish between cancer types.
