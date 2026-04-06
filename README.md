@@ -83,19 +83,19 @@ Mean CV: 0.794
 
 
 
-### Classification Report
-                         precision    recall  f1-score   support
+```
+Classification Report
+                     precision    recall  f1-score   support
 
-         Adenocarcinoma       0.82      0.95      0.88      2000
-   Large Cell Carcinoma       0.78      0.39      0.52       100
-   Small Cell Carcinoma       0.82      0.62      0.70       600
-Squamous Cell Carcinoma       0.81      0.70      0.75      1000
+Adenocarcinoma           0.82      0.95      0.88      2000
+Large Cell Carcinoma     0.78      0.39      0.52       100
+Small Cell Carcinoma     0.82      0.62      0.70       600
+Squamous Cell Carcinoma  0.81      0.70      0.75      1000
 
-               accuracy                           0.81      3700
-              macro avg       0.81      0.66      0.71      3700
-           weighted avg       0.81      0.81      0.81      3700
-
-
+accuracy                                    0.81      3700
+macro avg               0.81      0.66      0.71      3700
+weighted avg            0.81      0.81      0.81      3700
+```
 
 
 ## 📊 Visualizations
