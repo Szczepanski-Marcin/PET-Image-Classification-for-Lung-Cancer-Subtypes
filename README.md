@@ -87,11 +87,8 @@ Mean CV: 0.794
                          precision    recall  f1-score   support
 
          Adenocarcinoma       0.82      0.95      0.88      2000
-         
    Large Cell Carcinoma       0.78      0.39      0.52       100
-   
    Small Cell Carcinoma       0.82      0.62      0.70       600
-   
 Squamous Cell Carcinoma       0.81      0.70      0.75      1000
 
                accuracy                           0.81      3700
